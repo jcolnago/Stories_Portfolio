@@ -157,6 +157,11 @@ h1.YEAR {
     margin-top: 25px;
 }
 
+.graph {
+    width: 95%;
+    margin: 0 auto;
+}
+
 @media only screen and (max-width: 639px) {   
     body {
         width: 95%;
