@@ -1,0 +1,202 @@
+html {
+    margin: 1% 5%;
+    padding: 0;
+}
+
+body {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#bio, #timeline, #honors {
+    width: inherit;
+}
+
+footer p {
+    margin: 0
+}
+
+hr {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: auto;
+    font-size: 5px;
+    clear: both;
+    border: none;
+    border-top: 3px solid #AAA;
+    border-bottom: 3px solid #FFF;
+}
+
+header h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 72px;
+    padding: 2%;
+}
+
+.navbar-nav>.active>a, .navbar-nav>.active>a:focus, .navbar-nav>.active>a:hover, .navbar-nav a:hover {
+    color: #000;
+    background-color: #FFF;
+    border-bottom: 2px solid teal;
+}
+
+.navbar-toggle {
+    border-color: #FFF;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.backToTop {
+    display: none;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10;
+    background-color: teal;
+    border-radius: 20px;
+}
+
+.arrow {
+    margin: 7px 7px;
+    width: 10px;
+    color: #FFF;
+}
+
+.col-centered{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+ 
+.footnote {
+    font-size: small;
+    text-align: center;
+    color: #CCC;
+}
+
+.footernote {
+    font-size: small;
+    color: #EEE;
+}
+
+.discreet {
+    color: #CCC;
+}
+
+.icon {
+    width: 20px;
+    padding-bottom: 10px;
+}
+
+
+/* Bibtex CSS */
+#pubs li {
+    list-style-type: none;
+}
+
+bibtex { 
+    display: none; 
+}
+
+#bibtex_errors { 
+    margin-top:10px; color: red;
+}
+
+h1.header {
+    margin-left:8px;
+}
+
+h1.YEAR { 
+    font-size: 17px;
+    font-weight: bold;
+    display: inline;
+    margin-left:8px;
+}
+
+/* Timeline CSS */
+
+#timeline hr {
+	margin-top: 1vw;
+    border-top: 1px dotted #8c8b8b;
+	border-bottom: 1px dotted #fff;
+    margin-bottom: 1vw;
+}
+
+.job {
+    padding-top: 10px;
+    margin: 0;
+    font-size: large;
+    font-weight: bold;
+}
+
+.location {
+    margin-bottom: 10px;
+    font-size: medium;
+    color: #AAA;
+}
+
+.description {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.date {
+    text-align: right;
+}
+
+.more {
+    width: 20px;
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 639px) {   
+    body {
+        width: 95%;
+    }
+	
+    img {
+        width: 50%;
+    }
+    
+    .location {
+        margin: 0;
+    }
+
+    .description {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .date {
+        margin-bottom: 10px;
+        text-align: left
+    }
+}
+
+@media only screen and (min-width: 640px) {  
+    .navbar {
+        padding-bottom: 5%;
+    }
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    img {
+        width: 80%;
+    }
+}
