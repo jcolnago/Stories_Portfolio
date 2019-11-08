@@ -56,10 +56,34 @@
                     <p class="discreet date col-xs-11 col-md-4"> November 7th, 2019 </p>
                     <div class="clearfix"></div>
                     <div class="collapse" id="datawrapper">
-						<p class="small description"> Long description </p>
+						<p class="small description"> 
+							For this assignment I chose to redesign the graph from Wired's <a href="https://www.wired.com/story/evolution-of-data-leaks/">"The Evolution of Data Leaks"</a> for a few different reasons:</p>
+						<ul class="small description">
+							<li>The graphs show in the original data visualization did not have the same scale, potentially causing readers to come to incorrect conclusions;</li>
+							<li>The website opens with a Horizon graph which I find particularly difficult to parse; and,</li>
+							<li>Even though the audience of Wired would probably find the existing information in the graph interesting and sufficient, I believe this is important data that should be reacheable to a wider audience.</li>
+						</ul>
+						<p class="small description"> 
+							Given the above described reasons I chose to focus on picking a chart format that would allow for comparison between the different categories in the same scale, and providing key information to non-tech savvy readers to understand the main takeaways from the graph. </br>
+							I originally played with the idea of a line graph, but after quickly plotting the graph on Excel I realized that the lines would be overlapping too much and hard to parse. </p>
+						<div class="graph small">
+							<img src="images/leaky_line.png"/><br>
+						</div>
+						<p class="small description"> 
+							Then I decided to try a stacked area chart. After deciding that this addressed my concerns I moved to finding a way to keep the aspects that I liked about the graph (e.g. how it is interactive). The way I found to do that was to use the free infographic maker called <a href="https://infograph.venngage.com">Venngage.</a> This allowed me to quickly prototype an interactive stacked area chart and test it with my lab mates.
+						</p>
+						<div class="graph small">
+							<img src="images/leaky_area_v0.png"/><br>
+						</div>
+						<p class="small description"> 
+							I got a number of different feedback. As <b>positive feedback</b>, they were able to correctly assess what the graph was showing, even without the added information the original graph had. This did not surprise me since they are both tech and security savvy, but one of them said that they could see this being used in a presentation for people who did not understand the technical aspects of it. They also liked the colors as a whole and the fact that the main difference was using the strongest color. Their <b>improvements</b> focused on a few different aspects. First they both pointed out that the legend labels were not uniformly capitalized and not all in one line. One of them was very adamant about needing to caption the x-axis with "years," even though he conceded it was obvious that those were years. They both also wanted more information about the scope and a precise definition of the terms (<i>"I'm not sure what skimming means and hacking is a very broad term"</i>). One of them said that a description of what the graph is describing could be helpful for other people to process it. Lastly, neither realized that they could interact with the legends.<br> Based on their suggestions, I revised the graph to its final form:</p>
+						</p>
                         <div class="graph small">
-                           <script src="https://infograph.venngage.com/js/embed/v1/embed.js" data-vg-id="csggiPomdo" data-title="Leaky Data Area Chart" data-w="816" data-h="816" data-multipage="true" data-f="false"></script>
+                        	<script src="https://infograph.venngage.com/js/embed/v1/embed.js" data-vg-id="csggiPomdo" data-title="Leaky Data Area Chart" data-w="816" data-h="700" data-multipage="true" data-f="false"></script>
                         </div>
+                        <p class="small description">
+                        	For the final graph I added a few takeaways that were part of the original graph, I fixed the legend labels capitalization and move it to be vertical, I added the x-axis label in a smaller font, and I added a note to indicate that the reader can interact with the legend as well. My rationale for moving the legend to be vertical was that it both ensured they would be in one row, but also it meant that the labels would match the order shown in the graph, creating another level of association to help the reader parse the graph.
+                        </p>
                     </div>
                 </div>
 
