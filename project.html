@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+		<title>Jessica Colnago</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet"> 
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" type="text/css" href="css/w3.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/base.js"></script>
+    </head>
+
+    <body>
+        <header>
+        	<h1>Jessica Colnago</h1>
+        </header>
+        <main>
+
+			<nav class="navbar container-fluid">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed w3-teal" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">About <span class="sr-only">(current)</span></a></li>
+                    <li><a href="portfolio.html">Assignments</a></li>
+                    <li class="active"><a href="project.html">Final Project</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <section id='timeline' class="container-fluid">
+                <p>A significant part of how we think about issues in our daily lives is framed by how these issues are communicated in the media. We have seen this happen with political issues, environmental issues, and more recently we have seen how the narrative surrounding technology influences people's behaviors.</br></br>
+                In this project my data analysis objective is to map how the issue of online data privacy has been treated by different news outlets and, with the skills acquired in class, I hope to engage the reader in a critical discussion on how their own opinions and behaviors might have been influenced by the content that they have consumed so far. My ultimate goal, or "call to action" for the reader, is to revise their data privacy news diet to include a more diverse set of sources. </br></br>
+                I find it important to highlight that at this time I do not know what the news coverage surrounding privacy looks like beyond gut feelings and personal experience. This story and goals might need to be significantly revised depending on what I find.</p>
+
+				<div class="entry">
+                    <span class="more col-xs-1">
+                        <a role="button" data-toggle="collapse" data-target="#gdelt">
+                        <img src="images/more.png" class="icon"></a>
+                    </span>
+                    <div class="col-xs-11 col-md-7">
+                        <p class="job"> The Data Source </p>
+                        <p class="location"> The GDELT Project</p>
+                    </div>
+                    <div class="clearfix col-xs-1"></div>
+                    <p class="discreet date col-xs-11 col-md-4"> November 17th, 2019 </p>
+                    <div class="clearfix"></div>
+                    <div class="collapse" id="gdelt">
+						<p class="small description"> 
+							For the final project I chose to rely on the data set provided by <a href="https://blog.gdeltproject.org/gdelt-2-0-our-global-world-in-realtime/">the GDELT Project</a> in particular the 2.0 version of their Global Knowledge Graph. As described on their website:
+                        </p>
+                        <blockquote class="small description"> 
+                            ... the GDELT 2.0 Global Knowledge Graph extracts each person name, organization, company, disambiguated location, millions of themes and thousands of emotions from each article, resulting in an annotated metadata graph over the world's news each day. Totaling over 200 million records and growing at a rate of half a million to a million articles a day, the GKG 2.0 is perhaps the world’s largest open data graph over global human society ...
+                        </blockquote>
+                        <p class="small description"> 
+                            My plan is to query this dataset for a subset of news outlet relevant to the U.S. based public, focusing my queries with the "online privacy" keyword. Leveraging their emotional undercurrent assessment for each article I plan to map out not only how news coverage about online privacy has evolved over time, but also how the sentiment associated with those articles have evolved over time. I further plan to combine categorizations of news sources based on their status (e.g. newspaper vs blog) and their political leanings (e.g. right vs left). For the first I'll rely on personal knowledge of the outlets selected and, for the latter I plan to rely on <a href="https://mediabiasfactcheck.com/">the Media Bias/Fact Check website</a> to help me subset the news outlet in different categories.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="entry">
+                    <span class="more col-xs-1">
+                        <a role="button" data-toggle="collapse" data-target="#shorthand">
+                        <img src="images/more.png" class="icon"></a>
+                    </span>
+                    <div class="col-xs-11 col-md-7">
+                        <p class="job"> The Story Telling Tool </p>
+                        <p class="location"> Shorthand </p>
+                    </div>
+                    <div class="clearfix col-xs-1"></div>
+                    <p class="discreet date col-xs-11 col-md-4"> November 17th, 2019 </p>
+                    <div class="clearfix"></div>
+                    <div class="collapse" id="shorthand">
+                        <p class="small description"> 
+                            At first I toyed with the idea of creating a more interactive "chose your own adventure" style of story telling which would rely more heavily on web development skills. However, I quickly realized that this meant creating multiple narratives, which might be overly complicated for the timespan that I have in this class. <br><br> 
+                            Nevertheless I really enjoy articles that tell me the story they are trying to convey with a set of more interactive graphs to help visualize what is happening. Because of this I was very happy to be introduced to <a href="https://shorthand.com/">Shorthand</a> as it seems to simplify the infrastructure creation process to achieve this format. <br><br>
+                            Time permitting, I would love to create a visualization that lets readers try a combination of different news sources to try to create a "balanced diet guide" for themselves. 
+                        </p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <span class="more col-xs-1">
+                        <a role="button" data-toggle="collapse" data-target="#sketches">
+                        <img src="images/more.png" class="icon"></a>
+                    </span>
+                    <div class="col-xs-11 col-md-7">
+                        <p class="job"> The General Outline </p>
+                        <p class="location"> ... and sketches </p>
+                    </div>
+                    <div class="clearfix col-xs-1"></div>
+                    <p class="discreet date col-xs-11 col-md-4"> November 17th, 2019 </p>
+                    <div class="clearfix"></div>
+                    <div class="collapse" id="sketches">
+                        <p class="small description"> 
+                            I've sketched out my plan for the story telling in the image below. Essentially I plan to cover the data on how privacy has been communicated so far from a "sterile" point of view, with just the fluctuations over the years. Then I incorporate the idea of sentiment associated with the different news stories and how it varies from news source to news source, incorporating the narrative that this could mean you are unknowingly being manipulated by only seeing a specific take on the story. Then I present the resolution which is to have a "balanced news diet" 
+                        </p>
+                        <div class="graph small">
+                            <img src="images/outline_sketches.jpg"/><br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <div class="backToTop" style="padding: 3px 0 0 3px;">
+                <span style="color: white; text-align: center; font-weight:bold;"> UP </span>
+            </div>
+        </main>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </body>   
+</html>
