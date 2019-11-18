@@ -37,6 +37,15 @@ header h1 {
     padding: 2%;
 }
 
+a:link {
+  color: teal;
+}
+
+/* visited link */
+a:visited {
+  color: grey;
+}
+
 .navbar-nav>.active>a, .navbar-nav>.active>a:focus, .navbar-nav>.active>a:hover, .navbar-nav a:hover {
     color: #000;
     background-color: #FFF;
