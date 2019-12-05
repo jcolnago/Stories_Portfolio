@@ -145,6 +145,49 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="entry">
+                    <span class="more col-xs-1">
+                        <a role="button" data-toggle="collapse" data-target="#part3">
+                        <img src="images/more.png" class="icon"></a>
+                    </span>
+                    <div class="col-xs-11 col-md-7">
+                        <p class="job"> What's the story with privacy stories? </p>
+                        <p class="location"> Final Project Write Up </p>
+                    </div>
+                    <div class="clearfix col-xs-1"></div>
+                    <p class="discreet date col-xs-11 col-md-4"> December 4th, 2019 </p>
+                    <div class="clearfix"></div>
+                    <div class="collapse" id="part3">
+                        <p class="small description"> 
+                            For the final project I built on what was done for the "Storyboards and user feedback" part and incorporated more of their feedback in the final version. Another significant change was the decision to drop the graph that would allow readers to create their own privacy diet. This was because the distribution of privacy stories was overwhelmingly negative that it would be impossible to create a "balanced" diet and I was concerned seeing this could have the opposite effect than was intended: the reader would become less engaged, not more.
+                        </p>
+                        <p class="small description"> 
+                            One of the first decisions that needed to be made was related to what news sources to include. Given the desire to focus on <b> millenials and generation X users</b> I decided to not only pick standard news outlets, but also incorporate tech blogs and other opinion blogs. In order to make this an informed decision I used two different sources to pick outlets to explore. The first one was based on a report from Pew Research Center from 2014, where they explored <a href="https://www.journalism.org/2014/10/21/political-polarization-media-habits/">"Political Polarization and Media Habits."</a> As part of this report they present a list of "trust levels of news sources by ideological group."  For this project I picked the standard news sources (i.e. excluded Yahoo News and Google News) that were marked as overall "more trusted than distrusted." 
+                            The second one was an article from Lifewire in which it was compiled a list of the <a href="https://www.lifewire.com/top-most-popular-blogs-3486365">10 of the Most Popular News Blogs on the Internet,"</a> updated as of November 2019.
+                        </p>
+                        <figure class="graph small" style="width: 50%">
+                            <img src="images/pewresearch.png"/>
+                            <figcaption>Trust levels of news sources by ideological group</figcaption>
+                        </figure>
+                        <p class="small description"> 
+                            After compiling this list of 29 news outlets I queried the <a href="https://blog.gdeltproject.org/gdelt-2-0-our-global-world-in-realtime/">the GDELT data set</a> in order to get the weekly output of news articles categorized under "DATA PRIVACY" and their associated sentiment score. Lastly, I used the website <a href="https://mediabiasfactcheck.com/">Media Bias/Fact Check</a> to identify the political leaning for each of these outlets.
+                        </p>
+                        <p class="small description"> 
+                            My next step was to process this data in a way that I could easily generate data accurate graphs. For this I used the <a href="https://www.r-project.org/about.html">R programming langage</a> and <a href="https://rstudio.com">R Studio</a> to generate vector images of my visualizations, as well as the statistics and percentages you'll see on the website. After generating a first draft of the visualization, I relied on <a href="https://inkscape.org">Inkscape</a> to incorporate the knowledge I obtained in the class, in particular: best practices for use of color, alignment, typography, and naming conventions. Below I show a few examples of the simple R-generated graph versus the final version used in the class project. A few other graphs used in the final project were created using simple tools like PowerPoint.
+                        </p>
+                        <figure class="graph small" style="width: 80%">
+                            <img src="images/beforeafter.png"/>
+                            <figcaption>Examples of the original (R) and post-processed (Inkscape) graphs</figcaption>
+                        </figure>
+                        <p class="small description">
+                        	A final design decision with the <a href="https://carnegiemellon.shorthandstories.com/privacystories/index.html">final product</a> was to keep the non-content related visualizations to a minimum. This was because searching for imagery associated with privacy yielded many results that only seemed like they would distract the reader from the content and didn't seem to actually add much to the project as a whole.
+                        </p>
+                        <p class="small description">
+                        	The most interesting things that I found and tried to highlight were how the coverage of privacy stories tends to have a much more negative sentiment to it than positive, how after Cambridge Analytica the news coverage became even more negative, and how there isn't that big of a difference in how privacy is covered in outlets with different political leanings. I plan to build on this work both by including more news sources to be considered and visualizations on the positive vs negative percentages accross outlets, as well as by refining the methodology for definiting the news article sentiment and topic. As is I relied on what's provided by the data set, but there isn't much transparency as to how that is defined or calculated.
+                        </p>
+                    </div>
+                </div>
             </section>
 
             
